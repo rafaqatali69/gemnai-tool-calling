@@ -27,7 +27,7 @@ llm = ChatGoogleGenerativeAI(model = "gemini-2.0-flash-exp" , api_key=GOOGLE_API
 
 
 agent = initialize_agent(tools, llm , agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION )
-st.title("Toolcalling with Langchain with ony Multiply Function")
+st.title("Langchain toolcalling with Multiply Function")
 st.write("welcome to my app")
 user_input = st.text_input("enter your prompt")
 
